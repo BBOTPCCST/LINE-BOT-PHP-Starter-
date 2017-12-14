@@ -39,10 +39,10 @@ class ComposerAutoloaderInit82d24d8ae36365c109cb72628b8c7644
                 $loader->setPsr4($namespace, $path);
             }
 
-            $classMap = require __DIR__ . '/autoload_classmap.php';
-            if ($classMap) {
-                $loader->addClassMap($classMap);
-            }
+            $classMap = require _DIR_ . '/autoload_classmap.php';
+              if($classmap){
+                 $loader->addClassMap($classmap);
+              }
         }
 
         $loader->register(true);
